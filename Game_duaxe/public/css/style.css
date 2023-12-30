@@ -1,0 +1,137 @@
+.street{
+    background-image: url("../images/street.jpg");
+    background-size: auto;
+    height: 360px;
+}
+img{
+    padding: 15px;
+}
+.btn{
+    width: 200px;
+    margin: auto;
+}
+button{
+    margin: 10px;
+    padding: 10px;
+    background: rgb(0, 0, 0);
+    color: rgb(153, 210, 212);
+    border-radius: 5px;
+}
+.car_1{
+    left: 100px;
+}
+.end{
+    width: 20px;
+    height: 100%;
+    background: yellow;
+    float: right;
+    margin-top: -358px;
+    margin-right: 48px;
+}
+.traffic_light{
+    display: flex;
+}
+#red{
+    width: 50px;
+    height: 50px;
+    border-radius: 28px;
+    /* background: rgb(255, 170, 170); */
+    z-index: 2;
+    margin: 5px;
+    border: 3px solid rgb(255, 255, 255);
+    
+}
+#yellow{
+    width: 50px;
+    height: 50px;
+    border-radius: 28px;
+    /* background: rgb(255, 255, 180); */
+    margin: 5px;
+    z-index: 2;
+    border: 3px solid rgb(255, 255, 255);
+    
+}
+#green{
+    width: 50px;
+    height: 50px;
+    border-radius: 28px;
+    /* background: rgb(177, 255, 177); */
+    margin: 5px;
+    z-index: 2;
+    border: 3px solid rgb(255, 255, 255);
+    
+}
+#xang1{
+    width: 150px;
+    background: rgb(3, 201, 3);
+    height: 10px;
+    border-radius: 28px;
+}
+#xang2{
+    width: 150px;
+    background: rgb(3, 201, 3);
+    height: 10px;
+    border-radius: 28px;
+}
+.car_runing{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+
+}
+#box1{
+    width: 169px;
+    height: 35px;
+    margin: 10px;
+    padding: 10px;
+    background: rgb(253, 98, 2);
+    color: rgb(171, 205, 206);
+    border-radius: 5px;
+}
+#box2{
+    width: 169px;
+    height: 35px;
+    margin: 10px;
+    padding: 10px;
+    background: rgb(60, 56, 189);
+    color: rgb(201, 216, 216);
+    border-radius: 5px;
+}
+    .box3{
+        width: 195px;
+        display: flex;
+        align-items: center;
+        height: 65px;
+        background-color: rgb(0, 0, 0);
+        padding: 10px;
+        border-radius: 20px;
+        position: relative;
+    
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(0,-1px, 0);
+    }
+    
+    20%, 80% {
+        transform: translate3d(0, 1px, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(0, -1px,0);
+    }
+
+    40%, 60% {
+        transform: translate3d(0, 1px, 0);
+    }
+}
+@keyframes run {
+    0% {
+        padding: 0;
+    }
+    100% {
+        padding-left: 1650px;
+    }
+}

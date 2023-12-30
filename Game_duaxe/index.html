@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./public/css/style.css">
+     <title>Document</title>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="traffic_light">
+            <div class="box3">
+            <div id="red"></div>
+            <div id="yellow"></div>
+            <div id="green"></div></div>
+            <button onclick="start()">Start</button>
+        </div>
+        <div class="xang">
+            <div id="box1"> Xăng xe 1<div id="xang1"></div></div>
+            <div id="box2"> Xăng xe 2<div id="xang2"></div></div>
+        </div>
+
+        <div class="street">
+            <div id="car1" class="car_runing">
+                <img src="./public/images/car_2.png" alt="" width="300px">
+            </div>
+            <div id="car2" class="car_runing">
+                <img src="./public/images/car_3.png" alt="" width="300px">
+            </div>
+            
+            
+            <div class="end"></div>
+        </div>
+        <div class="btn">
+            <button onclick="repeat()">Restart</button>
+        </div>
+    </div>
+<p id="log"></p>
+    <Script src="./public/js/main.JS"></Script>
+</body>
+</html>
